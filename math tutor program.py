@@ -20,4 +20,4 @@ for q in questions.keys():              # q can be any variable, it is temporary
         score=score+1       #this will assign one to score variable in case of right answer to be printed out at end
     else:
         print("Incorrect!")    
-print("You got " + str(score) + " correct!") #important to set score as str, otherwise it is an int and has print problems
+print("You got " + str(score) + " correct!") #important to set score as str, otherwise it is an int and has print problems.
