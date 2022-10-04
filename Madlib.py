@@ -9,7 +9,7 @@ relative=input("Please provide a relatives name: ")
 noun_1=input("Please provide a noun: ")
 liquid=input("Please provide a liquid: ")
 verb_ing=input("Please provide a verb ending in -ing: ")
-body_part=input("Please provide a body part: (plural)")
+body_part=input("Please provide a body part (plural): ")
 noun_2=input("Please provide a plural noun: ")
 verb_ing2=input("Please provide a verb ending in -ing: ")
 noun_3=input("Please provide a noun: ")
@@ -20,4 +20,3 @@ print("It was a " + adj_1 + " cold November day."
 " So I carried a tray of glasses full of " + liquid + " into the " + verb_ing + " room."
 " When I got there, I couldn't believe my " + body_part +"!"
 " There were " + noun_2 + " " + verb_ing2 + " on the " + noun_3 +"!")
-
