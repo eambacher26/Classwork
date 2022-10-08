@@ -4,7 +4,7 @@ from tkinter.messagebox import YES
 
 player_score=0
 computer_score=0
-games_left=3
+games_left=7
 
 game_over = False
 
@@ -90,7 +90,7 @@ while game_over == False:
             if restart_game == "yes":
                 player_score=0
                 computer_score=0
-                games_left=3
+                games_left=7
                 game_over=False
             elif restart_game == "no":
                 game_over = True
@@ -104,15 +104,14 @@ while game_over == False:
                         game_over=False
                         player_score=0
                         computer_score=0
-                        games_left=3
+                        games_left=7
                         break
                     if restart_game == "no":
                         print("Thanks for playing!")
                         game_over = True
                         break
-    
-        print(str(games_left)) 
-        while games_left > 0 and games_left <3:
+ #KEEP PLAYING PROMPT    
+        while games_left > 0 and games_left <7:
                 keep_playing=input("Keep playing?: " ).lower()
                 if keep_playing == "yes":
                     game_over=False
@@ -122,7 +121,7 @@ while game_over == False:
                     print("Thanks for playing!")
                     exit()
                 else:                       #else statement needed before while for repeating loop
-                    while keep_playing != 'yes' or 'no':
+                    while keep_playing != 'yes' or 'no': #COULD ALSO USE LIST OF CHOICES
                         print("I do not understand")
                         keep_playing=input("keep playing? yes/no: ").lower()
                         if keep_playing == "yes":
